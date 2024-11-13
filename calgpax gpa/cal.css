@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Rajdhani:wght@600&display=swap');
+
+* {
+    font-family: "Rajdhani", "Noto Sans Thai", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+}
+
+body {
+    font-family: "Rajdhani", "Noto Sans Thai", serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hName {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#courses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 90%;
+}
+
+button {
+    background-color: #585858;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+button:focus {
+    outline: none;
+}
+
+.backt1stp {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #00ffaa;
+    border-radius: 5px;
+    text-decoration: none;
+    width: fit-content;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+    display: block;
+    margin: 0 auto;
+}
+
+.backt1stp:hover {
+    background-color: #00a36d;
+}

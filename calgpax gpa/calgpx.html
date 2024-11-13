@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="cal.css" />
+</head>
+<body>
+    <div class="read">** หากต้องการคำนวณเกรดรวม ให้เปลี่ยนจาก 'รายชื่อวิชา' เป็น 'ปีการศึกษา' และกรอกเกรดรวมถึงหน่วยกิตของแต่ละเทอมในปีการศึกษานั้น ๆ **</div>
+    <div class="readeng">** If you want to calculate the GPAX, replace 'Course Name' with 'Academic Year' and input the grades and credits for each semester of that academic year. **</div>
+    <div class="container">
+        <h1 class="hName">GPA , GPAX Calculator</h1>
+        <div id="courses">
+            <div class="course">
+                <input type="text" placeholder="วิชา Course" />
+                <input type="number" placeholder="เกรด Grade (0-4)" class="grade" min="0" max="4" step="0.01" />
+                <input type="number" placeholder="หน่วยกิต Weight" class="credit" min="1" />
+            </div>
+        </div>
+        <button onclick="addCourse()">+ เพิ่มรายวิชา Add Course</button>
+        <button onclick="calculateGPA()">คำนวนเกรด Calculate GPA , GPAX</button>
+        <h2>เกรดที่ได้ Result: <span id="gpaResult">-</span></h2>
+    </div>
+    <script src="cal.js"></script>
+    <a href="../index.html" class="backt1stp">กลับสู่หน้าหลัก</a>
+    <br>
+    <a href="../index.html" class="backt1stp">back to main</a>
+    <p>© 2024 Student Hub</p>
+</body>
+</html>
